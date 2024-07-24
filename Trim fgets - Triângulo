@@ -1,0 +1,43 @@
+<?php
+    // Solicita ao usuário para inserir 3 números em sequência
+    print ("Entre com 3 números em sequência: ");
+    
+    // Lê a entrada do usuário para o primeiro número e remove espaços em branco extras
+    $num1 = trim(fgets(STDIN));
+    
+    // Solicita ao usuário para inserir o próximo número
+    print ("Próximo: ");
+    
+    // Lê a entrada do usuário para o segundo número e remove espaços em branco extras
+    $num2 = trim(fgets(STDIN));
+    
+    // Solicita ao usuário para inserir o último número
+    print ("O último: ");
+    
+    // Lê a entrada do usuário para o terceiro número e remove espaços em branco extras
+    $num3 = trim(fgets(STDIN));
+
+    // Verifica se as três medidas podem formar um triângulo usando a condição de desigualdade triangular
+    if ((($num1 + $num2) > $num3) && 
+        (($num1 + $num3) > $num2) && 
+        (($num2 + $num3) > $num1))
+    {
+        // Se as medidas formarem um triângulo, imprime esta mensagem
+        print ("Medidas PODEM ser lados de um triângulo\n");
+
+        // Verifica o tipo de triângulo baseado nos lados
+        if (($num1 == $num2) && ($num2 == $num3))
+            print ("O triângulo é Equilátero.\n"); // Todos os lados são iguais
+
+        else if (($num1 == $num2) || ($num2 == $num3) || ($num1 == $num3))
+            print ("O triângulo é Isósceles.\n"); // Dois lados são iguais
+
+        else
+            print ("O triângulo é Escaleno.\n"); // Todos os lados são diferentes
+    }
+    else
+    {
+        // Se as medidas não podem formar um triângulo, imprime esta mensagem
+        print ("Medidas NÃO PODEM ser lados de um triângulo\n");
+    }
+?>
