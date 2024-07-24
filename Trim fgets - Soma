@@ -1,0 +1,18 @@
+<?php
+    // Solicita ao usuário para inserir o primeiro número
+    print ("Entre com um número: ");
+    
+    // Lê a entrada do usuário e remove quaisquer espaços em branco antes e depois do número
+    $num1 = trim(fgets(STDIN));
+    
+    // Solicita ao usuário para inserir o segundo número
+    print ("Entre com outro número: ");
+    
+    // Lê a entrada do usuário e remove quaisquer espaços em branco antes e depois do número
+    $num2 = trim(fgets(STDIN));
+    
+    // Calcula a soma dos dois números e imprime o resultado
+    // Nota: . é usado para concatenar strings em PHP
+    // A expressão $num1 + $num2 é avaliada primeiro (adição), então concatena com a string "A soma dos números é "
+    print ("A soma dos números é " . $num1 + $num2. "\n");
+?>
