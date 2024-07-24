@@ -1,0 +1,42 @@
+<?php
+    // Solicita ao usuário para informar uma nacionalidade
+    print("Informe uma nacionalidade: ");
+    
+    // Lê a entrada do usuário e remove espaços em branco extras
+    $prato = trim(fgets(STDIN));
+
+    // Utiliza um switch para verificar o valor de $prato e executar o código correspondente
+    switch ($prato)
+    {
+        case ("México"):
+            // Se $prato for "México", imprime os pratos típicos
+            print("Taco, Burrito, Guacamole");
+            break;
+        case ("Japão"):
+            // Se $prato for "Japão", não imprime nada (caso vazio)
+            print("");
+            break;
+        case ("França"):
+            // Se $prato for "França", não imprime nada (caso vazio)
+            print("");
+            break;
+        case ("Itália"):
+            // Se $prato for "Itália", não imprime nada (caso vazio)
+            print("");
+            break;
+        case ("Portugal"):
+            // Se $prato for "Portugal", não imprime nada (caso vazio)
+            print("");
+            break;
+        case ("Brasil"):
+            // Se $prato for "Brasil", não imprime nada (caso vazio)
+            print("");
+            break;
+        default:
+            // Se $prato não corresponder a nenhum dos casos anteriores, imprime esta mensagem padrão
+            print("Sem informações sobre este país.");
+    }
+    
+    // Imprime uma quebra de linha no final da saída
+    print("\n");
+?>
