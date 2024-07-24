@@ -1,0 +1,30 @@
+<?php
+    print("Informe o nome do aluno: ");
+    $aluno = trim(fgets(STDIN));
+
+    print("Entre com a quantidade de aulas do ano: ");
+    $aulasTotal = trim(fgets(STDIN));
+
+    print("Entre com a frequência do aluno " . $aluno . ": ");
+    $aulasAssist = trim(fgets(STDIN));
+
+    $frequencia = ($aulasAssist / $aulasTotal);
+
+    if ($frequencia < 0.75) {
+        print("Aluno " . $aluno . " reprovado por falta.");
+    } else {
+        print("Entre com as notas bimestrais em sequência: ");
+        $nota1 = trim(fgets(STDIN));
+        $nota2 = trim(fgets(STDIN));
+        $nota3 = trim(fgets(STDIN));
+        $nota4 = trim(fgets(STDIN));
+
+        $mediaFinal = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
+
+        if ($mediaFinal >= 7.0) {
+            print("O aluno " . $aluno . " foi APROVADO com média " . $mediaFinal . ".");
+        } else {
+            print("O aluno " . $aluno . " foi REPROVADO com média " . $mediaFinal . ".");
+        }
+    }
+?>
