@@ -1,0 +1,11 @@
+<?php
+    // Exibe mensagem para o usuário digitar seu nome
+    echo "Digite seu nome: ";
+    
+    // Lê uma linha de entrada do usuário, remove espaços em branco extras com trim
+    // e armazena na variável $nome
+    $nome = trim(fgets(STDIN));
+    
+    // Exibe uma saudação utilizando o nome fornecido pelo usuário
+    echo "Olá, $nome!\n";
+?>
