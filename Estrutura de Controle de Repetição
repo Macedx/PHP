@@ -1,0 +1,9 @@
+<?php
+    // Início do loop 'for'. O loop será executado enquanto a condição for verdadeira.
+    for ($i = 0; $i < 10; $i++) // Inicializa a variável $i com 0 e continua o loop enquanto $i for menor que 10. Incrementa $i em 1 a cada iteração.
+    {
+        // Imprime a string com o valor atual de $i seguido de uma nova linha (\n).
+        // \n é interpretado como uma nova linha em um terminal ou console.
+        echo "O valor de i é: $i\n";
+    }
+?>
