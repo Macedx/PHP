@@ -1,0 +1,19 @@
+<?php
+    // Início do loop 'for'. O loop irá iterar enquanto $numero for menor que 10.
+    for ($numero = 0; $numero < 10; $numero++)
+    {
+        // Verifica se $numero é um número par.
+        // O operador % calcula o resto da divisão de $numero por 2.
+        // Se o resto for 0, $numero é par.
+        if (($numero % 2) == 0)
+        {
+            // Se $numero for par, a instrução 'continue' é executada.
+            // 'continue' faz o loop pular a iteração atual e continuar com a próxima.
+            continue;
+        }
+        
+        // Imprime o valor atual de $numero seguido de um espaço
+        // Isso só ocorre para números ímpares, pois os pares foram pulados com 'continue'.
+        echo $numero . " ";
+    }
+?>
