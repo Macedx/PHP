@@ -1,0 +1,17 @@
+<?php
+    // Inicializa a variável $i com o valor 0
+    $i = 0;
+    
+    // Início do loop 'do-while'. O bloco de código será executado pelo menos uma vez.
+    do
+    {
+        // Imprime a string com o valor atual de $i seguido de uma nova linha (\n)
+        // \n é interpretado como uma nova linha em um terminal ou console.
+        echo "O valor de i é: $i \n";
+        
+        // Incrementa o valor de $i em 1 a cada iteração
+        $i++;
+    }
+    // O loop continua enquanto a condição $i < 10 for verdadeira
+    while ($i < 10);
+?>
