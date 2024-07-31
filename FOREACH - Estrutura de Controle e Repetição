@@ -1,0 +1,12 @@
+<?php
+    // Cria um array chamado $frutas contendo três elementos: "maçã", "banana" e "laranja"
+    $frutas = array("maçã", "banana", "laranja");
+    
+    // Início do loop 'foreach'. Este loop itera sobre cada elemento do array $frutas.
+    foreach ($frutas as $fruta)
+    {
+        // Imprime o valor atual da variável $fruta seguido de uma nova linha (\n)
+        // \n adiciona uma quebra de linha em um terminal ou console.
+        echo $fruta . "\n";
+    }
+?>
