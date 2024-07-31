@@ -1,0 +1,18 @@
+<?php
+    // Define a variável $parar_loop com o valor 9. Esse valor será usado para parar o loop.
+    $parar_loop = 9;
+    
+    // Início do loop 'for'. O loop não tem uma condição de parada explícita no cabeçalho.
+    for ($numero = 0; ; $numero++)
+    {
+        // Verifica se o valor atual de $numero é igual ao valor de $parar_loop.
+        // Se for, o loop é interrompido com o comando 'break'.
+        if ($numero == $parar_loop)
+        {
+            break;
+        }
+        
+        // Imprime o valor atual de $numero seguido de um espaço
+        echo $numero . " ";
+    }
+?>
